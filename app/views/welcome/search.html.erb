@@ -1,0 +1,14 @@
+<table>
+	<tr>
+		<th>Name</th>
+		<th>Value</th>
+	</tr>
+	
+<% @parsed['message'].keys.each do |key| %>
+	<tr>
+		<td><%= key %></td>
+		<td><%= @parsed['message'][key] %></td>
+	</tr>
+<% end %>
+</table>
+
